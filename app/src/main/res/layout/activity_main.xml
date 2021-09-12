@@ -36,7 +36,8 @@
         android:textColorHint="#639A8B"
         android:autofillHints="@string/edit_text_hint"
         android:inputType="number"
-        android:maxLength="10"/>
+        android:maxLength="7"
+        android:imeOptions="actionDone"/>
 
     <Button
         android:id="@+id/button_guess"
@@ -49,7 +50,7 @@
         android:text="@string/button_guess_text"
         android:textStyle="bold"
         android:textColor="@color/text_color"
-        android:backgroundTint="#68DAC0"/>
+        android:backgroundTint="#68DAC0" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -72,6 +73,7 @@
             android:layout_weight="1" />
 
         <TextView
+            android:id="@+id/text_view_guess"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="70"
@@ -79,7 +81,8 @@
             android:gravity="center_horizontal"
             android:textSize="18sp"
             android:textColor="@color/text_color"
-            android:text="@string/text_view_03_text" />
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
 
     </LinearLayout>
 
@@ -103,18 +106,19 @@
             android:layout_weight="1" />
 
         <TextView
+            android:id="@+id/text_view_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="70"
             android:padding="7dp"
             android:gravity="center_horizontal"
             android:textSize="18sp"
-            android:textColor="@color/text_color"
-            android:text="@string/text_view_03_text" />
+            android:textColor="@color/text_color" />
 
     </LinearLayout>
 
     <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_compat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -126,6 +130,7 @@
         android:layoutDirection="rtl"/>
 
     <CheckBox
+        android:id="@+id/check_box"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="15dp"
@@ -136,6 +141,7 @@
         />
 
     <ToggleButton
+        android:id="@+id/toggle_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -145,6 +151,7 @@
         android:backgroundTint="#F1EAD5"/>
 
     <TextView
+        android:id="@+id/text_view_res"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"

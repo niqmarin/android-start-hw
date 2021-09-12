@@ -5,11 +5,11 @@
     <string name="button_guess_text">Угадать</string>
     <string name="button_new_text">Сыграть ещё раз</string>
     <string name="text_view_02_text">Ваш вариант:</string>
-    <string name="text_view_03_text">*  *  *  *  *  *  *</string>
+    <string name="text_view_hidden_text">"*  *  *  *  *  *  *"</string>
     <string name="text_view_04_text">Загаданное число:</string>
     <string name="switch_text">Подсмотреть</string>
     <string name="check_box_text">Максимальные шансы на победу</string>
-    <string name="text_view_result_default">.   .   .   .   .</string>
+    <string name="text_view_result_default">".   .   .   .   ."</string>
     <string name="text_view_result_win">~ ВЫ УГАДАЛИ ~</string>
     <string name="text_view_result_fail">вы не угадали. попробуйте ещё раз</string>
     <string name="toggle_button_off_text">:(</string>
