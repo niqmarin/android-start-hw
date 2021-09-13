@@ -165,18 +165,39 @@
         android:shadowColor="#989898"
         android:text="@string/text_view_result_default" />
 
-    <Button
-        android:id="@+id/button_new"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp"
-        android:text="@string/button_new_text"
-        android:textStyle="bold"
-        android:textColor="@color/text_color_orange"
-        android:backgroundTint="#FFE8A4"/>
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="@string/button_new_text"
+            android:textStyle="bold"
+            android:textColor="@color/text_color_orange"
+            android:backgroundTint="#FFE8A4"/>
+
+        <Button
+            android:id="@+id/button_next_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/button_next_page_text"
+            android:textStyle="bold"
+            android:backgroundTint="@color/button_next_page_color"/>
+
+    </LinearLayout>
 
     </LinearLayout>
 

@@ -14,4 +14,18 @@
     <string name="text_view_result_fail">вы не угадали. попробуйте ещё раз</string>
     <string name="toggle_button_off_text">:(</string>
     <string name="toggle_button_on_text">:)</string>
+    <string name="text_view_name">Имя:</string>
+    <string name="edit_text_hint_name">Константин</string>
+    <string name="text_view_inn">ИНН:</string>
+    <string name="edit_text_hint_inn">772356982345</string>
+    <string name="text_view_codeword">Кодовое слово:</string>
+    <string name="edit_text_hint_codeword">Петрушка</string>
+    <string name="text_view_email">E-mail:</string>
+    <string name="edit_text_hint_email">kostik1990@mail.ru</string>
+    <string name="text_view_phone">Телефон:</string>
+    <string name="edit_text_hint_phone">+79161254238</string>
+    <string name="text_view_password">Пароль:</string>
+    <string name="text_view_date">День Х:</string>
+    <string name="button_next_page_text">"->"</string>
+
 </resources>

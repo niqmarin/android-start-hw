@@ -3,6 +3,7 @@ package ru.gb.androidstart.hw01;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SwitchCompat;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button buttonGuess;
     private Button buttonNew;
+    private Button buttonNextPage;
     private EditText editTextGuess;
     private TextView textViewGuess;
     private TextView textViewNumber;
@@ -139,6 +141,12 @@ public class MainActivity extends AppCompatActivity {
             }
             textViewGuess.setText("");
             textViewRes.setText(strDefault);
+        });
+
+        buttonNextPage = findViewById(R.id.button_next_page);
+        buttonNextPage.setOnClickListener(v -> {
+            Intent intent = new Intent(this, SecondActivity.class);
+            startActivity(intent);
         });
     }
 

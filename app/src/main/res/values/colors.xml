@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="text_color">#1F6853</color>
     <color name="text_color_orange">#FF9800</color>
+    <color name="text_color_activity_second">#592575</color>
+    <color name="button_next_page_color">#ddaacc</color>
 </resources>
