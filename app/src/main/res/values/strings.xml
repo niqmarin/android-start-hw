@@ -1,3 +1,31 @@
 <resources>
-    <string name="app_name">Homework01</string>
+    <string name="app_name">Первая домашняя работа</string>
+    <string name="text_view_01_text">Проверьте свою догадливость</string>
+    <string name="edit_text_hint">Введите волшебные 7 цифр</string>
+    <string name="button_guess_text">Угадать</string>
+    <string name="button_new_text">Сыграть ещё раз</string>
+    <string name="text_view_02_text">Ваш вариант:</string>
+    <string name="text_view_hidden_text">"*  *  *  *  *  *  *"</string>
+    <string name="text_view_04_text">Загаданное число:</string>
+    <string name="switch_text">Подсмотреть</string>
+    <string name="check_box_text">Максимальные шансы на победу</string>
+    <string name="text_view_result_default">".   .   .   .   ."</string>
+    <string name="text_view_result_win">~ ВЫ УГАДАЛИ ~</string>
+    <string name="text_view_result_fail">вы не угадали. попробуйте ещё раз</string>
+    <string name="toggle_button_off_text">:(</string>
+    <string name="toggle_button_on_text">:)</string>
+    <string name="text_view_name">Имя:</string>
+    <string name="edit_text_hint_name">Константин</string>
+    <string name="text_view_inn">ИНН:</string>
+    <string name="edit_text_hint_inn">772356982345</string>
+    <string name="text_view_codeword">Кодовое слово:</string>
+    <string name="edit_text_hint_codeword">Петрушка</string>
+    <string name="text_view_email">E-mail:</string>
+    <string name="edit_text_hint_email">kostik1990@mail.ru</string>
+    <string name="text_view_phone">Телефон:</string>
+    <string name="edit_text_hint_phone">+79161254238</string>
+    <string name="text_view_password">Пароль:</string>
+    <string name="text_view_date">День Х:</string>
+    <string name="button_next_page_text">"->"</string>
+
 </resources>

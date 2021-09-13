@@ -1,18 +1,204 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="@drawable/gradient_llayout"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="7dp"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:textColor="@color/text_color"
+        android:background="#81DDCB"
+        android:text="@string/text_view_01_text" />
+
+    <EditText
+        android:id="@+id/edit_text_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingTop="7dp"
+        android:textSize="18sp"
+        android:textColor="@color/text_color"
+        android:hint="@string/edit_text_hint"
+        android:textColorHint="#639A8B"
+        android:autofillHints="@string/edit_text_hint"
+        android:inputType="number"
+        android:maxLength="7"
+        android:imeOptions="actionDone"/>
+
+    <Button
+        android:id="@+id/button_guess"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="@string/button_guess_text"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
+        android:backgroundTint="#68DAC0" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:gravity="end"
+            android:textSize="14sp"
+            android:textColor="@color/text_color"
+            android:text="@string/text_view_02_text" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/text_view_guess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:padding="7dp"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:textColor="@color/text_color"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:gravity="end"
+            android:textSize="14sp"
+            android:textColor="@color/text_color"
+            android:text="@string/text_view_04_text" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/text_view_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:padding="7dp"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:textColor="@color/text_color" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_compat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        app:switchPadding="15dp"
+        android:textSize="18sp"
+        android:textColor="@color/text_color"
+        android:text="@string/switch_text"
+        android:layoutDirection="rtl"/>
+
+    <CheckBox
+        android:id="@+id/check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:textSize="18sp"
+        android:textColor="@color/text_color"
+        android:text="@string/check_box_text"
+        android:visibility="invisible"
+        />
+
+    <ToggleButton
+        android:id="@+id/toggle_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/text_color"
+        android:textOff="@string/toggle_button_off_text"
+        android:textOn="@string/toggle_button_on_text"
+        android:backgroundTint="#F1EAD5"/>
+
+    <TextView
+        android:id="@+id/text_view_res"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="7dp"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
+        android:textColor="@color/text_color"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:shadowColor="#989898"
+        android:text="@string/text_view_result_default" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="@string/button_new_text"
+            android:textStyle="bold"
+            android:textColor="@color/text_color_orange"
+            android:backgroundTint="#FFE8A4"/>
+
+        <Button
+            android:id="@+id/button_next_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/button_next_page_text"
+            android:textStyle="bold"
+            android:backgroundTint="@color/button_next_page_color"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
