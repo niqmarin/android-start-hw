@@ -111,10 +111,12 @@ public class MainActivity extends AppCompatActivity {
                 }
                 textViewNumber.setText(strHiddenNumber.toString());
             }
-            if (isFullWin || (checkBoxEasyWin.isChecked() && isEasyWin)) {
-                textViewRes.setText(strWin);
-            } else {
-                textViewRes.setText(stfFail);
+            if (strGuess.length() == 7) {
+                if (isFullWin || (checkBoxEasyWin.isChecked() && isEasyWin)) {
+                    textViewRes.setText(strWin);
+                } else {
+                    textViewRes.setText(stfFail);
+                }
             }
         });
 
